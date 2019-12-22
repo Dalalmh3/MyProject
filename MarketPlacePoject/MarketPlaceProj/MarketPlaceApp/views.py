@@ -11,7 +11,8 @@ def index(request):
     }
     return render(request, "MarketPlaceApp/index.html", context ) 
 
-
+def login(request):
+    return render(request, 'Registration/login.html')
 
 def Add_Product(request):
     if request.method == "POST":
@@ -24,7 +25,8 @@ def Add_Product(request):
     form = ProductForm()
     return render(request, 'MarketPlaceApp/add_product.html',{'form':form})
 
-
+def logout(request):
+    pass
 
 
 
